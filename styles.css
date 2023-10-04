@@ -1,0 +1,42 @@
+.pianoContainer {
+  background-color: brown;
+}
+
+.whiteKeys {
+  display: flex;
+  height: 100px;
+  z-index: 0;
+}
+
+.blackKeys {
+  display: flex;
+  height: 60px;
+  z-index: 1;
+  gap: 7px;
+  position: relative;
+  top: -100px;
+}
+
+.blackKeys div {
+  flex: 1;
+  background-color: black;
+}
+
+.whiteKeys div {
+  flex: 1;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#ab1 {
+  margin-left: 1.4%;
+}
+
+.cd,
+.fg {
+  margin-left: 2%;
+}
+
+#ab8 {
+  margin-right: 3.25%;
+}
