@@ -1,42 +1,48 @@
 .pianoContainer {
   background-color: brown;
-}
-
-.whiteKeys {
+  border: 5px solid black;
   display: flex;
-  height: 100px;
-  z-index: 0;
+  height: 125px;
 }
 
-.blackKeys {
-  display: flex;
-  height: 60px;
-  z-index: 1;
-  gap: 7px;
-  position: relative;
-  top: -100px;
-}
-
-.blackKeys div {
-  flex: 1;
-  background-color: black;
-}
-
-.whiteKeys div {
-  flex: 1;
-  border: 1px solid black;
+.whiteKey {
+  flex: 22 1 0;
+  height: 100%;
+  z-index: 9999;
   background-color: white;
+  border: 1px solid black;
+  border-right: 0px;
 }
 
-#ab1 {
-  margin-left: 1.4%;
+.ab {
+  margin-left: -0.22%;
+  margin-right: -0.9%;
 }
 
-.cd,
+.cd {
+  margin-left: -0.73%;
+  margin-right: -0.39%;
+}
+
+.de {
+  margin-left: -0.39%;
+  margin-right: -0.73%;
+}
+
 .fg {
-  margin-left: 2%;
+  margin-left: -0.9%;
+  margin-right: -0.22%;
 }
 
-#ab8 {
-  margin-right: 3.25%;
+.ga {
+  margin-left: -0.56%;
+  margin-right: -0.56%;
+}
+
+.blackKey {
+  flex: 13 1 0;
+  height: 65.625%;
+  z-index: 10000;
+
+  background-color: black;
 }
